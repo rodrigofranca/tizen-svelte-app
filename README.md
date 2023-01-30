@@ -1,14 +1,62 @@
-Artigo sobre desenvolvimento em TVs
-<https://promwad.com/company/news/how-develop-publish-tizen-apps-smart-tv-our-guide-javascript-engineers>
+# Svelte Tizen App
 
-Versões antigas do chrome
-<https://www.slimjet.com/chrome/google-chrome-old-version.php>
+## Installing and Configuring
 
-Abrindo chrome antigo com --disable-web-security
+### 1. Install `Wits` [https://github.com/Samsung/Wits]
 
-```bash
-~/Development/chrome79.app/Contents/MacOS/Google\ Chrome --user-data-dir="/tmp/temporary-chrome-profile-dir" --disable-web-security --disable-site-isolation-trials
-```
+`pnpm i -g @tizentv/wits`
+
+## **System requirements**
+
+---
+SVELTE TIZEN APP needs the following prerequisites on your local development machine.
+
+### 1. Node.js and Git (recommend v7.10.1 ~)
+
+We will not describe how to do these installations as there are many ways to do it and its developer preference. We recommend using something like nvm or asdf to manage different versions of Node.js across your code projects.
+
+### 2. Developer Mode is enabled on your Samsung TV
+
+- 1 With your Samsung Remote, press the `Home` button.
+- 2 Navigate to the `Apps` button and press `Enter/OK`.
+- 3 When on the `Apps` screen, press `1` `2` `3` `4` `5` in order on the remote to open the `Developer Mode Dialog`. If this doesn't work, try it again.
+- 4 When the Developer Mode Dialog appears, toggle the switch to `On` and enter the IP address of your development machine.
+
+### 4. Certification for packaging application (Tizen / Samsung)
+
+``` text
+Certification (Tizen/Samsung) is required for packaging your tizen web application.
+````
+
+`Using Editor`
+
+- Tizen Studio
+    Install the latest version of [Tizen Studio](http://developer.samsung.com/tv).
+
+- VSCode
+    Install the latest version of [VSCode](https://code.visualstudio.com/).
+    And download the extension "tizensdk.tizentv".
+
+- Atom
+    Install the latest version of [Atom](https://atom.io/).
+    And download the package "atom-tizentv-2"
+
+`Using WITs`
+
+- WITs (v2.4.0 ~) supports creating a Tizen certification.
+    Please do "wits -c" for making a new Tizen certification.
+
+
+
+
+
+
+
+
+
+
+
+
 
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
 
