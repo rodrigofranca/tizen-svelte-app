@@ -1,0 +1,10 @@
+.vscode
+.npmrc
+css
+node_modules
+src
+package.json
+README.md
+tsconfig.*
+vite.*
+svelte.*
